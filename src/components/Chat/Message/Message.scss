@@ -1,0 +1,45 @@
+@import "../../../utilities/variables";
+
+.message {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: $chat-bg;
+
+    img {
+        height: 30px;
+        width: 30px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    .message-content {
+
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 5px;
+        background: white;
+        border-radius: 6px;
+
+        .message-timestamp {
+            color: grey;
+            font-weight: 400;
+            font-size: 11px;
+        }
+
+        h4 {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 2px;
+            padding-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 5px;
+            padding-top: 2px;
+            margin-top: 2px;
+            font-size: 14px;
+        }
+
+    }
+}
