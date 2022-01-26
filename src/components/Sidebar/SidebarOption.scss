@@ -1,0 +1,24 @@
+@import "../../utilities/variables";
+
+.sidebar-option {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+    padding-left: 2px;
+
+    .sidebar-option-icon {
+        padding: 10px;
+        font-size: 18px !important;
+    }
+
+    .sidebar-option-channel {
+        padding: 10px 0;
+    }
+
+    .sidebar-option-hash {
+        padding: 10px;
+        padding-left: 14px;
+    }
+}
+

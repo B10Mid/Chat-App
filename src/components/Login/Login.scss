@@ -1,0 +1,25 @@
+@import "../../utilities/variables";
+
+.login {
+
+    height: 100vh;
+    background: $font-color;
+    display: grid;
+    place-items: center;
+
+    .login-card {
+        padding: 100px;
+        text-align: center;
+        color: $font-color;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+        button {
+            color: $font-color;
+            margin-top: 30px;
+            border: 1px solid $font-color;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@import "../../utilities/variables";
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background: $background;
+    color: $font-color;
+    min-width: 180px;
+    max-width: 180px;
+    position: relative;
+    flex: 0.4;
+}
+
+.sidebar-top {
+    display: flex;
+    border-top: 1px solid $border;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+
+    #account-icon {
+        cursor: pointer;
+    }
+    
+    #settings-icon {
+        cursor: pointer;
+    }
+    
+}
+
+.sidebar-center {
+    border-top: 1px solid $border;
+
+    .sidebar-icons {
+        :hover {
+            background: $background-hover;
+        }
+    }
+
+    .sidebar-channels {
+        margin-top: 30px;
+        border-top: 1px solid $border;
+        text-transform: lowercase;
+
+        .channels {
+            :hover {
+                background: $background-hover;
+            }
+        }
+
+        .channel-toggle {
+            background: $background;
+            border: none;
+            padding: 0;
+            width: 100%;
+            color: $decoration;
+            border-bottom: 1px solid $border;
+
+            :hover {
+                background: $background-hover;
+            }
+        }
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+#account-icon {
+    padding-left: 10px;
+}
+
+

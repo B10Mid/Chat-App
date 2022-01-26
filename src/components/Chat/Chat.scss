@@ -1,0 +1,66 @@
+@import '../../utilities/variables';
+
+.chat {
+    flex: 0.6;
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding-bottom: 150px;
+    background: $chat-bg;
+
+    .chat-header {
+        height: 20px;
+        border-bottom: 1px solid $background;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        text-transform: lowercase;
+        background: $chat-bg;
+        color: $decoration;
+    }
+
+    .chat-header-left {
+
+        .channel-name {
+            text-transform: lowercase;
+            font-size: 14px;
+        }
+
+        .MuiSvgIcon-root {
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        
+    }
+
+    .chat-messages {
+        padding-top: 60px !important;
+        color: $font-color;
+    }
+}
+
+
+// Scrollbar
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
