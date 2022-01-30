@@ -43,7 +43,7 @@ function Sidebar() {
             </div>
   
             <div className="sidebar-channels">
-              <button className="channel-toggle" onClick={toggleChannels}>
+              <button className="channel-toggle">
                 <SidebarOption Icon={ExpandMoreIcon} title="Channels" />
               </button>
       
@@ -57,18 +57,6 @@ function Sidebar() {
         </div>
     </div>
   )
-}
-
-function toggleChannels() {
-  let channels = document.getElementsByClassName("channels");
-
-  Array.from(channels).forEach((channel) => {
-    if (channel.style.display === "block") {
-      channel.style.display = "none";
-    } else {
-      channel.style.display = "block";
-    }
-  });
 }
 
 export default Sidebar;
